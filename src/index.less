@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'normal';
+    src: url('./font/normal.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'confusion';
+    src: url('./font/confusion.ttf') format('truetype');
+}
+
+:global {
+  // app容器，因为在html中定义，用global防止名称被hash
+  #app {
+      overflow: hidden;
+      display: flex;
+      width: 100%;
+      height: 100%;
+  }
+
+
+  // 全局scroll样式覆盖
+  ::-webkit-scrollbar-thumb {
+      background-color: #e6e6e6;
+  }
+
+  ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+  }
+}
